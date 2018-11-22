@@ -12,7 +12,7 @@ class Navigation extends React.Component {
              <li><a href={'#'}>HOTEL</a></li>
              <li><a href={'#'}>POKOJE</a></li>
              <li><a href={'#'}>OFERTY SPECJALNE</a></li>
-             <li><a href={'#'}>RESTAURACJA</a></li>
+             <li><a href={'#'}>RESTAURACJA</a></li><br/>
              <li><a href={'#'}>DLA FIRM</a></li>
              <li><a href={'#'}>TWOJA REZERWACJA</a></li>
              <li><a href={'#'}>KONTAKT</a></li>
@@ -21,4 +21,4 @@ class Navigation extends React.Component {
    }
  }
 
-export default Navigation;
+export {Navigation};
