@@ -1,0 +1,33 @@
+@import "../variables";
+
+.smContainer{
+  display:none;
+
+}
+
+@media (min-width: $desktopVersion) {
+  .smContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+    .blackDiv {
+      font-size: 24px;
+      font-weight: 600;
+      width: 150px;
+      height: 50px;
+      background-color: $mainBlack;
+      color: white;
+      padding: 10px;
+      text-align: center;
+
+    }
+
+    .smIcon {
+      width: 70px;
+      height: 50px;
+    }
+  }
+}

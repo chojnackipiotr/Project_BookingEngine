@@ -1,0 +1,25 @@
+@import '../variables';
+
+.restaurantPhoto{
+    img{
+        width: 100%;
+        height: auto;
+    }
+  }
+  .restaurantText{
+    padding: $mainPageSectionPadding;
+  }
+
+@media (min-width: $desktopVersion) {
+  .restaurantInfo{
+    display: flex;
+    .restaurantPhoto{
+      width: 50%;
+    }
+    .restaurantText{
+      width: 50%;
+      font-size: 1.3rem;
+      margin: auto 0;
+    }
+  }
+}

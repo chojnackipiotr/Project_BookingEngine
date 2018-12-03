@@ -1,0 +1,64 @@
+.mp_b2bWrapper{
+  display: flex;
+  flex-direction: column;
+  padding: $mainPageSectionPadding;
+  .mp_b2bImage{
+    width: 100%;
+    img{
+      width: 100%;
+      max-width: 100vw;
+      height: auto;
+    }
+  }
+  .mp_b2bText{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    h4{
+      font-size: 30px;
+      margin: 0 auto;
+    }
+    ul{
+      margin-top: 10px;
+    }
+    .mp_b2bForm{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      input[type=email]{
+        border-bottom: 1px solid $mainGold;
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+      }
+      input[type=submit]{
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 1.2rem;
+        background-color: $mainGold;
+        font-weight: 900;
+        color: white;
+      }
+    }
+  }
+}
+@media (min-width: $desktopVersion) {
+  .mp_b2bWrapper{
+    flex-direction: row;
+    .mp_b2bImage{
+      width: 50%;
+      padding: $mainPageSectionPadding;
+
+    }
+    .mp_b2bText{
+      width: 50%;
+      padding: $mainPageSectionPadding;
+      font-size: 20px;
+      h4{
+        font-size: 30px;
+      }
+    }
+  }
+}

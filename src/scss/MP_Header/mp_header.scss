@@ -1,0 +1,57 @@
+@import "../variables";
+@import "mp_header_menu";
+@import "mp_header_socialmedia";
+@import "mp_header_mainMenu";
+
+.topHeader{
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/topBackgroundImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+  section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      img {
+        width: 300px;
+        height: 150px;
+      }
+    }
+  }
+
+  .mainMenuWrapper{
+    display: none;
+  }
+
+}
+
+@media (min-width: $desktopVersion) {
+  .topHeader {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    section{
+      display: flex;
+      justify-content: normal;
+      align-items: normal;
+      div {
+        width: 50%;
+      img{
+        width: 301px;
+        height: 150px;
+      }
+      }
+    }
+    .mainMenuWrapper{
+      display: flex;
+      width: 1100px;
+      margin: 0 auto;
+    }
+  }
+}

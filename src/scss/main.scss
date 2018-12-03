@@ -1,6 +1,21 @@
-@import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+@import "../../node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+/*@import "../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";*/
 
-* {
+@import "./variables";
+@import "./MP_Header/mp_header";
+@import "./MP_HotelInfo/mp_hotelInfo";
+@import "./MP_RoomInfo/mp_roomInfo";
+@import "./reservationButton";
+@import "./MP_Restaurant/mp_restaurant";
+@import "./MP_SpecialOffers/mp_specialOffers";
+@import "./MP_B2B/mp_b2b";
+@import "./MP_YourReservation/mp_yourReservation";
+@import "./MP_Contact/mp_contact";
+@import "./MP_ReservationEngine_Step1/mp_reservationEngine_step1";
+
+
+
+*{
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,131 +24,24 @@
   text-decoration: none;
   outline: 0;
   box-sizing: border-box;
+  font-family: 'Poiret One', cursive, sans-serif;
 }
 
-body{
-  font-family: 'Poiret One', cursive;
-}
-
-/*Header*/
-.header{
+.mp_infoSection{
   width: 100%;
-  height: 400px;
-  padding-top: 20px;
-  padding: 0 37px;
-  background-image: url("../images/topBackgroundImage.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-
 }
 
-.topNavigation{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.logo{
-  width: 50%;
-}
-.topLogo{
-  width: 261px;
-  height: 131px;
-}
-
-.SocialMedia{
-  position: relative;
-  top: -25px;
-  width: 50%;
-  height: 131px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.blackDiv{
-  background-color: black;
-  width: 134px;
-  height: 37px;
-  color: white;
-  font-size: 24px;
-  font-weight: 600;
+.mp_title{
+  font-size: 37px;
   text-align: center;
+  padding-top: 50px;
 }
 
-/*Main Menu*/
-nav{
-  width: 100%;
-}
-
-ul.mainMenu{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-size: 45px;
-  font-weight: 400;
-
-  li{
-  text-align: center;
-  padding-right: 23px;
-  padding-left: 23px;
-  list-style-type: none;
-}
-  li:not(:last-child):not(:nth-child(4)):after{
-    content: "|";
-    padding-left: 23px;
-  }
-  a{
-    color: black;
-  }
-  a:hover{
-    background-color: gold;
-    padding: 5px;
-    -webkit-box-shadow: -12px 10px 0px -3px rgba(0,0,0,0.3);
-    -moz-box-shadow: -12px 10px 0px -3px rgba(0,0,0,0.3);
-    box-shadow: -12px 10px 0px -3px rgba(0,0,0,0.3);
-  }
-}
-
-/*Hotel Main Page*/
-.hotelMainPage{
-  width: 100%;
-  height: 600px;
-  background-image: url("../images/HotelMP_background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  h3{
-    padding-top: 50px;
+@media (min-width: $desktopVersion) {
+  .mp_title{
+    font-size: 60px;
     text-align: center;
-    font-size: 69px;
-  }
-  h3:before{
-    content: '-';
-    padding-right: 20px;
-  }
-  h3:after{
-    content: '-';
-    padding-left: 20px;
-  }
-  .hotelInfo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    div{
-      width: 100%;
-    }
-    .hotelGallery{
-      padding: 10px 50px;
-
-    }
-    .hotelInfoText{
-      padding: 10px 50px;
-      font-size: 27px;
-
-    }
+    padding-top: 50px;
   }
 }
+
