@@ -18,7 +18,6 @@ class MP_RoomInfo_Text extends React.Component {
                     <li>MINI LODÓWKA</li>
                     <li>ZESTAW DO PARZENIA KAWY</li>
                 </ul>
-                <ReservationButton/>
             </section>
 
      )

@@ -1,0 +1,58 @@
+.step4{
+  width: 100%;
+  margin: 20% auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  .step4Wrapper{
+    border-left: 5px solid $mainGold;
+    padding-left: 10px;
+    .checkInOut{
+      width: 100%;
+      background-color: $mainGray;
+      font-size: 1.3rem;
+      display: flex;
+      flex-direction: column;
+      font-weight: 900;
+      color: white;
+      padding-left: 5px;
+      .importantInfo{
+        font-size: 1.9rem;
+      }
+    }
+    h3{
+      width: 100%;
+      font-size: 1.3rem;
+      .boldedInfo{
+        background-color: $mainGold;
+        font-weight: 900;
+        padding-left: 5px;
+      }
+    }
+    p{
+      font-size: 1.3rem;
+      .boldedInfo{
+        background-color: $mainGold;
+        font-weight: 900;
+        padding-left: 5px;
+      }
+    }
+    .nextBttn {
+      margin-top: 5px;
+      border: 3px solid gold;
+      font-size: 22px;
+      background-color: white;
+      font-weight: 900;
+      border-radius: 30px;
+      align-self: center;
+      width: 90%;
+    }
+  }
+  @media (min-width: $desktopVersion) {
+    .step4Wrapper{
+    width: 80%;
+    margin: 0 auto;
+  }
+  }
+}

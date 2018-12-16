@@ -9,6 +9,7 @@
     .singleRoomWrapper {
       display: flex;
       flex-direction: column;
+      background-color: white !important;
 
       .rooms_leftSide {
         width: 100%;
@@ -74,6 +75,24 @@
     }
   }
 }
+ul.control-dots{
+  li.dot{
+    border: 1px solid gold;
+  }
+  li.selected{
+    border: 7px solid gold;
+  }
+}
+
+.control-next:before{
+  border-left:8px solid black !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid black !important;
+}
+
+
 
 
 

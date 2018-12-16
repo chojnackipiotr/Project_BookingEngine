@@ -227,20 +227,17 @@ class MP_Contact extends React.Component {
    }
     componentDidMount(){
 
-        // The location of Uluru
-        var uluru = {lat: 54.039870, lng: 21.767149};
-        // The map, centered at Uluru
+        var uluru = {lat: 12.436149, lng: -69.887452};
         var map = new google.maps.Map(
             this.map, {
-                zoom: 14,
+                zoom: 10,
                 center: uluru,
                 styles: styles
             }
         );
-        // The marker, positioned at Uluru
         var marker = new google.maps.Marker({
             position: uluru,
-            icon: 'https://kadimex.pl/wp-content/uploads/2016/08/R%C4%99kawice_Holik_Proline_II.jpg',
+            icon: require('../../images/mapMarker.png'),
             map: map});
     }
  }

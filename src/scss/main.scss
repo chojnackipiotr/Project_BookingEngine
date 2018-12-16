@@ -12,7 +12,11 @@
 @import "./MP_YourReservation/mp_yourReservation";
 @import "./MP_Contact/mp_contact";
 @import "./MP_ReservationEngine_Step1/mp_reservationEngine_step1";
-
+@import "./MP_ReservationEngine_Step2/mp_reservationEngine_step2";
+@import "./MP_ReservationEngine_Step2/mp_reservationEngine_step2_images";
+@import "./MP_ReservationEngine_Step3/mp_reservationEngine_step3";
+@import "./MP_ReservationEngine_Step4/mp_reservationEngine_step4";
+@import "./MP_ReservationCompleted/mp_reservationCompleted";
 
 
 *{
@@ -26,6 +30,7 @@
   box-sizing: border-box;
   font-family: 'Poiret One', cursive, sans-serif;
 }
+
 
 .mp_infoSection{
   width: 100%;
